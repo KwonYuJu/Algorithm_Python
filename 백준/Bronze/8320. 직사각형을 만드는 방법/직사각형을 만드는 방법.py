@@ -1,8 +1,9 @@
 N = int(input())
 
-ans = 0
-for i in range(1, N+1):     # i : 세로
-    for j in range(i, N+1): # j : 가로
-        if i*j <= N:
-            ans += 1
+ans = N
+for i in range(2, N):
+    cnt = N//i - (i-1)
+    if cnt < 1:
+        break
+    ans += cnt
 print(ans)
