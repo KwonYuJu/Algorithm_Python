@@ -25,7 +25,7 @@ lst = list(map(int, input().split()))
 add, sub, mul, div = map(int, input().split())
 
 # 함수 호출
-mn, mx = int(1e10), int(-1e10)
+mn, mx = int(1e9), int(-1e9)
 dfs(1, lst[0], add, sub, mul, div)
 
 print(mx, mn, sep='\n')
